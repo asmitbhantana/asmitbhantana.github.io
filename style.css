@@ -1,0 +1,237 @@
+body{
+    margin:0;
+}
+
+.mainBody{
+    background: linear-gradient(to left, grey, grey,black,black, black);;
+    font-family: "Helvetica Neue";
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer{
+    /* height: 70vh; */
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(375px,1fr));
+    flex-grow: 1;
+    margin-top: 20px;
+    padding-left:1%;
+    padding-right:1%;
+}
+.mainContainer.projectContainer{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.personalInfoContainer{
+    display: flex;
+    flex-direction:column;
+}
+.personalInfoContainer a#prewordsBio{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-left: 25px;
+    color: white;
+}
+.personalInfoContainer a#fullUsername{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-left: 25px;
+}
+.personalInfoContainer a#userBio{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 3px;
+    font-size: 10px;
+    margin-left:40px;
+    color: grey;
+}
+.personalInfoContainer a#growthWords{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top:40px;
+}
+.personalProgessContainer {
+    display: grid;
+    margin-top: 5%;
+    grid-template-columns: repeat(3,minmax(65px,1fr));
+    grid-template-rows: repeat(3,minmax(65px,1fr));
+    grid-template-areas:
+                    "followers.following"
+                        " .gitIcon. "
+                    "publicRepos.publicGist";
+    padding-left:7%;
+    padding-right: 7%;
+}
+.card_view{
+    background-color:white;
+    color: black;
+    display:flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding:10px;
+    margin: 0;
+    box-shadow: 10px;
+    align-items: center;
+}
+
+
+.personalProgessContainer .card_view img{
+    flex-grow: 1;
+    width: fit-content;
+}
+.personalProgessContainer .card_view     a{
+    color:black;
+    font-size:auto;
+    text-decoration:none;
+    font-family:"Times New Roman",serif;
+}
+.personalProgessContainer #followersItem{
+    grid-area: followers;
+}
+.personalProgessContainer #followingItem{
+    grid-area: following;
+}
+.personalProgessContainer #gitIcon{
+    grid-area: gitIcon;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+.personalProgessContainer #gitIcon img{
+}
+.personalProgessContainer #publicRepos{
+    grid-area: publicRepos;
+}
+.personalProgessContainer #publicGist{
+    grid-area: publicGist;
+}
+
+
+/* rep css */
+.myRepoContainer {
+    padding:10%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    width: margin;
+    flex-wrap: wrap;
+}
+.myRepoContainer a{
+    font-size: 25px;
+}
+.myRepoContainer .repoCardList{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    background-color:gray;
+}
+.repo_card_item {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(5,10px);
+    align-items: flex-start;
+    align-self: center;
+    margin-top: 5px;
+}
+.repo_card_item #repoName{
+    grid-row: 1/2;
+    grid-column: 2/7;
+    font-size: 16px;
+    margin-left:5px;
+    text-decoration: none;
+
+}
+.repo_card_item #repoDescription{
+    grid-row: 3/5;
+    grid-column: 2/7;
+    font-size: 10px;
+    color: grey;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.repo_card_item #languageLogoImg{
+    grid-row: 4/5;
+    grid-column: 9/10;
+    width: 25px;
+}
+.repo_card_item #repoDate{
+    grid-row: 1/2;
+    grid-column: 9/10;
+    font-size: 9px;
+    color: grey;
+    padding-bottom: 5px;
+}
+.repo_card_item #repoTypeImg{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width:40px;
+    mix-blend-mode: darken;
+    border: 1px solid #FFDBDB;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+.myRepoContainer .repoNavigationBar{
+    margin: 5px;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+
+}
+.myRepoContainer .repoNavigationBar{
+
+}
+
+/* follow me button */
+.mainBody #followMeBtn{
+    align-self: center;
+    color: white;
+    border: none;
+    background-color: green;
+    padding:10px;
+    text-align: center;
+}
+
+/* nav container */
+.navContainer{
+    display: flex;
+    flex-direction:row;
+    color:black;
+}
+.navContainer img{
+    height: 50px;
+    align-self: flex-start;
+}
+.navContainer .navBtnContainer{
+    align-self: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.navContainer img{
+    align-self: center;
+    margin:10px;
+    margin-left: 26px;
+    padding:5px;
+}
+.navContainer *{
+    text-decoration:none;
+    margin: 10px;
+    padding:5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navContainer a#hireMeBtn{
+    color:white;
+}
+.footerContainer{
+    padding:1px;
+    font-size: 13px;
+    margin-top:1%;
+    color:white;
+    background-color:black;
+    display:flex;
+    justify-content: center;
+}
