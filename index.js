@@ -36,7 +36,7 @@ function createRepoNavigationButton(){
         repoDivisor++;
     }
     for(let i=1;i<repoDivisor;i++){
-        let button=`<button onClick="navRepoPageBtnClicked(${i})">${i}</button>`;
+        let button=`<button id="repoNavigationButton" onClick="navRepoPageBtnClicked(${i})">${i}</button>`;
         createdButtons=createdButtons.concat(button);
     }
     document.getElementById('repoNavigationBar').innerHTML = createdButtons;

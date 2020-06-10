@@ -3,9 +3,9 @@ body{
 }
 
 .mainBody{
-    background: linear-gradient(to left, grey, grey,black,black, black);;
+    background: white;
     font-family: "Helvetica Neue";
-    color: white;
+    color: purple;
     display: flex;
     flex-direction: column;
 }
@@ -33,7 +33,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     margin-left: 25px;
-    color: white;
+    color: purple;
 }
 .personalInfoContainer a#fullUsername{
     font-family: 'Times New Roman', Times, serif;
@@ -43,7 +43,7 @@ body{
 .personalInfoContainer a#userBio{
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 3px;
-    font-size: 10px;
+    font-size: 14px;
     margin-left:40px;
     color: grey;
 }
@@ -65,8 +65,8 @@ body{
     padding-right: 7%;
 }
 .card_view{
-    background-color:white;
-    color: black;
+    background-color:#E7D6F7;
+    color: purple;
     display:flex;
     flex-direction: column;
     border-radius: 10px;
@@ -82,7 +82,7 @@ body{
     width: fit-content;
 }
 .personalProgessContainer .card_view     a{
-    color:black;
+    color:purple;
     font-size:auto;
     text-decoration:none;
     font-family:"Times New Roman",serif;
@@ -126,7 +126,7 @@ body{
     flex-direction: column;
     margin-top: 30px;
     flex-wrap: wrap;
-    background-color:gray;
+    background-color:#9C82B8;
 }
 .repo_card_item {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -149,7 +149,6 @@ body{
     grid-row: 3/5;
     grid-column: 2/7;
     font-size: 10px;
-    color: grey;
     margin-left: 15px;
     margin-bottom: 5px;
 }
@@ -162,7 +161,6 @@ body{
     grid-row: 1/2;
     grid-column: 9/10;
     font-size: 9px;
-    color: grey;
     padding-bottom: 5px;
 }
 .repo_card_item #repoTypeImg{
@@ -172,7 +170,7 @@ body{
     mix-blend-mode: darken;
     border: 1px solid #FFDBDB;
     box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(#bc61e0,#bc61e0 , #bc61e0, white);
     
 }
 .myRepoContainer .repoNavigationBar{
@@ -182,25 +180,22 @@ body{
     justify-content:center;
 
 }
-.myRepoContainer .repoNavigationBar{
+.myRepoContainer .repoNavigationBar #repoNavigationButton{
+    color: purple;
+    background-color: #E7D6F7;
+    padding: 7px;
+    border:0;
+    margin: 2px;
 
 }
 
-/* follow me button */
-.mainBody #followMeBtn{
-    align-self: center;
-    color: white;
-    border: none;
-    background-color: green;
-    padding:10px;
-    text-align: center;
-}
+
 
 /* nav container */
 .navContainer{
     display: flex;
     flex-direction:row;
-    color:black;
+    color:purple;
 }
 .navContainer img{
     height: 50px;
@@ -223,14 +218,16 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .navContainer a#hireMeBtn{
-    color:white;
+    color:purple;
+    background-color: #E7D6F7;
+    border-radius: 3px;
 }
 .footerContainer{
     padding:1px;
     font-size: 13px;
     margin-top:1%;
-    color:white;
-    background-color:black;
+    color:purple;
+    background-color:#E7D6F7;
     display:flex;
     justify-content: center;
 }
