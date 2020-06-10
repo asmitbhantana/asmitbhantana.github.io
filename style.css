@@ -12,17 +12,20 @@ body{
 
 .mainContainer{
     /* height: 70vh; */
-    display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(375px,1fr));
+    display: flex;
+    /* grid-template-columns:repeat(auto-fit,minmax(375px,1fr)); */
+    flex-direction: column;
     flex-grow: 1;
     margin-top: 20px;
     padding-left:1%;
     padding-right:1%;
+    margin-bottom: 5px;
 }
 .mainContainer.projectContainer{
     display: flex;
     flex-direction: row;
     align-content: center;
+    background-image: url(https://lh3.googleusercontent.com/FukThbIFRRG9COl0zlVctfZdQIxHzLCwHEldST8GJRgGVAntY4SfIT-PHtTrZpBE_b9RMuqRIXXVaQSy8QeZv78ISPkNeX8Yh8i5YP0n4utuS3JttE-zxXWWtny45AluJJmFeS1urznr0nRuXdt7iIxoLm44-zJeTvAYk46aXXUUvqIeqAYudyVueVBbLA9jvXr8uQupzQ5Hs41X2SZ7uqH7Q5W4Wvc6RQN2nnwYW98tJqPhgAbvGC46CWCXh9IHONvBy3-a1SmGriwWJVP8_ETXcAqXEQIsmeNV65NPqyHI-UNq1hP87KCBrX0ORnOx8vBe2Diz-PDcltomZiQ0nQKvXhzfcfN-4Hxh45pt13nWDAYnYtoIHAms8KeIwTcXOiD6TfNQtk1dRypkLEiXwpbDhRhOMvow23kfTH51QQsqH6koDfFMYUtOSCK5x_DlFfQ1YH2z9xigwjpiLMtJvYrWgsJR0mFGgzU6bOeejJxyQfXTlgYbu6qHHpeobVIWPWLmnSnoSf0fcLWzKogVcz5iZr48TC2Vf4v8daUWrz_oaHsN78kizMLV-FSysioSu6ZgaoxTioYoNp9uUygu5qmqx1OqWiIt_YEcNiHBCI1kDCiSaZdyiLs5OyJyjvVjf2dO1X-2kPCVoz8Fz20W50jKcAFpNQ_JMuULRCdaoUsR1DmxxRVH5vHJiqwH8g=w902-h601-no?authuser=0);
 }
 
 .personalInfoContainer{
@@ -61,8 +64,9 @@ body{
                     "followers.following"
                         " .gitIcon. "
                     "publicRepos.publicGist";
-    padding-left:7%;
-    padding-right: 7%;
+    padding-left:3%;
+    padding-right: 3%;
+    width: max-content;
 }
 .card_view{
     background-color:#E7D6F7;
@@ -75,8 +79,11 @@ body{
     box-shadow: 10px;
     align-items: center;
 }
-
-
+.personalProgessParentContainer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3%;
+}
 .personalProgessContainer .card_view img{
     flex-grow: 1;
     width: fit-content;
@@ -112,7 +119,7 @@ body{
 /* rep css */
 .myRepoContainer {
     padding:10%;
-    color:white;
+    color:purple;
     display: flex;
     flex-direction: column;
     width: margin;
