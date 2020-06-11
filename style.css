@@ -3,32 +3,32 @@ body{
 }
 
 .mainBody{
-    background: white;
     font-family: "Helvetica Neue";
     color: purple;
     display: flex;
     flex-direction: column;
 }
+section{
+    background: linear-gradient(to right,  #ffffff , 30%,#f8e5f3);
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
 .mainContainer{
     /* height: 70vh; */
     display: flex;
     /* grid-template-columns:repeat(auto-fit,minmax(375px,1fr)); */
     flex-direction: column;
     flex-grow: 1;
-    margin-top: 20px;
     padding-left:1%;
     padding-right:1%;
-    margin-bottom: 5px;
 }
 .mainContainer .projectContainer{
     
     display: flex;
     flex-direction: column;
     align-content: center;
-    background-image:linear-gradient();
-    background-repeat: no-repeat;
-    background-size: 100%,cover;
+  
 }
 
 .personalInfoContainer{
@@ -201,7 +201,7 @@ body{
     justify-content:center;
 
 }
-.myRepoContainer .repoNavigationBar #repoNavigationButton{
+.myRepoContainer .repoNavigationBar .repoNavigationButton{
     color: purple;
     background-color: #E7D6F7;
     padding: 7px;
@@ -209,6 +209,7 @@ body{
     margin: 2px;
 
 }
+
 
 
 
@@ -221,6 +222,7 @@ body{
 .navContainer img{
     height: 50px;
     align-self: flex-start;
+    border-radius: 3px;
 }
 .navContainer .navBtnContainer{
     align-self: center;
@@ -246,9 +248,33 @@ body{
 .footerContainer{
     padding:1px;
     font-size: 13px;
-    margin-top:1%;
     color:purple;
     background-color:#E7D6F7;
     display:flex;
     justify-content: center;
 }
+
+.footerContainer a{
+    text-decoration: none;
+}
+
+#goUpButton{
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: white; 
+  color: purple; 
+  cursor: pointer;
+  padding: 5px; 
+  border-radius: 10px; 
+  font-size: 18px;
+  box-shadow: 0px 4px 4px rgba(#bc61e0,#bc61e0 , #bc61e0, white);
+
+}
+#goUpButton:hover {
+    background-color: purple; 
+    color: white;
+  }

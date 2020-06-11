@@ -1,6 +1,4 @@
-//making invisible
-// document.getElementById('loading').style.visibility = 'visible' 
-// document.getElementById('mainBody').style.visibility = 'hidden' 
+
 const per_page = 5;
 let githubUrl="https://api.github.com/users/asmitbhantana"
 let githubResponse="";
@@ -36,7 +34,7 @@ function createRepoNavigationButton(){
         repoDivisor++;
     }
     for(let i=1;i<repoDivisor;i++){
-        let button=`<button id="repoNavigationButton" onClick="navRepoPageBtnClicked(${i})">${i}</button>`;
+        let button=`<button class="repoNavigationButton" id="${i}" onClick="navRepoPageBtnClicked(${i})">${i}</button>`;
         createdButtons=createdButtons.concat(button);
     }
     document.getElementById('repoNavigationBar').innerHTML = createdButtons;
@@ -70,10 +68,13 @@ function updateRepoInfromation(data){
 }
 function navRepoPageBtnClicked(page){
     fetchProjectsFrom(page);
+    
 }            
 
 function fetchAlData(){
+    hideItemsWhenLoading(true);
     getAPIDataFromGithub();
+    hideItemsWhenLoading(false);
 }
 
 function updateUserData(){
@@ -83,4 +84,9 @@ function updateUserData(){
     fetchProjectsFrom(1);
 }
 
+function hideItemsWhenLoading(hidden){
+    document.getElementById('loading').style.display = hidden?'block':'none';
+    console.log(document.getElementById('loading'));
+    document.getElementById('mainContainer').style.display = hidden?'none':'block'; 
+}
 fetchAlData();
