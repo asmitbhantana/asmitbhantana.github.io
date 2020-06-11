@@ -74,7 +74,6 @@ function navRepoPageBtnClicked(page){
 function fetchAlData(){
     hideItemsWhenLoading(true);
     getAPIDataFromGithub();
-    hideItemsWhenLoading(false);
 }
 
 function updateUserData(){
@@ -82,6 +81,7 @@ function updateUserData(){
     changeUserProgressInfo();
     createRepoNavigationButton();
     fetchProjectsFrom(1);
+    hideItemsWhenLoading(false);
 }
 
 function hideItemsWhenLoading(hidden){
